@@ -1,0 +1,24 @@
+{
+  "apps": [
+    {
+      "name": "Server service",
+      "script": "server.js",
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "env_production": {
+        "NODE_ENV": "production"
+      }
+    },
+    {
+      "name": "Mongodb service",
+      "script": "/services/mongodb.service.js",
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "env_production": {
+        "NODE_ENV": "production"
+      }
+    }
+  ]
+}
