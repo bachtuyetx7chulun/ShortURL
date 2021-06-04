@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="flex flex-ai--ct flex-jc--sb">
+                <a href="#" class="header__logo">
+                    <img src="./assets/images//logo.png" alt="shortener_logo" />
+                </a>
+                <a href="#" class="header__hamburger hide-on-desktop">
+                    <img src="./assets/images/hamburger.gif" alt="" />
+                </a>
+                <div class="header__links hide-on-moblie">
+                    <a href="#">Node?</a>
+                    <a href="#">About</a>
+                    <a href="#">Document</a>
+                    <a href="#">Download</a>
+                </div>
+
+                <div class="header__actions hide-on-moblie">
+                    <button>Login</button>
+                    <button>Register</button>
+                </div>
+            </nav>
+        </header>
+        <section class="hero">
+            <div class="hero__contain">
+                <div class="hero__image"></div>
+                <div class="hero__content">
+                    <p>Wellcome to my shortener</p>
+                    <span>Let's go</span>
+                </div>
+            </div>
+        </section>
+        <section class="mid">
+            <div class="mid__contain">
+                <form id="form" class="mid__form">
+                    <input
+                        type="text"
+                        name="url"
+                        id="url"
+                        placeholder="Enter your url ❤"
+                        required
+                    />
+
+                    <div class="flex">
+                        <button type="submit">Generate</button>
+                        <img
+                            id="loading"
+                            class="hidden"
+                            src="assets/images/loading.gif"
+                            alt="Loadding ..."
+                        />
+                    </div>
+                </form>
+                <div class="mid__receive">
+                    <p id="errorAlert" class="color--red hidden">
+                        Oops! You got a error => Do it again 👌
+                    </p>
+                    <p id="successAlert" class="color--blue hidden">
+                        Short url :
+                        <span id="slug" href="#"> Your slug url </span>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </body>
+    <script src="./assets/js/main.js"></script>
+</html>

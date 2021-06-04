@@ -1,19 +1,24 @@
 {
-  "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^10.0.0",
-    "express": "^4.17.1",
-    "express-list-endpoints": "^5.0.0",
-    "helmet": "^4.6.0",
-    "monk": "^7.3.4",
-    "morgan": "^1.10.0",
-    "nanoid": "^3.1.23",
-    "node-cron": "^3.0.0",
-    "pm2": "^4.5.6",
-    "yup": "^0.32.9"
-  },
-  "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js"
-  }
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^10.0.0",
+        "express": "^4.17.1",
+        "express-list-endpoints": "^5.0.0",
+        "helmet": "^4.6.0",
+        "monk": "^7.3.4",
+        "morgan": "^1.10.0",
+        "nanoid": "^3.1.23",
+        "node-cron": "^3.0.0",
+        "pm2": "^4.5.6",
+        "yup": "^0.32.9"
+    },
+    "scripts": {
+        "start": "node server.js",
+        "dev": "nodemon server.js",
+        "scss": "node-sass --watch --output-style expanded --precision 6 public/assets/scss/main.scss public/assets/css/style.css",
+        "watch": "nodemon -e scss -x \"yarn scss\""
+    },
+    "devDependencies": {
+        "node-sass": "^6.0.0"
+    }
 }

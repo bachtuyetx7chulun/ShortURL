@@ -1,0 +1,19 @@
+$size: (
+    'small': '40rem',
+    'medium': '64rem',
+    'large': '87.5rem',
+);
+
+// * hide-on-desktop
+@mixin breakpoint-down($type) {
+    @media only screen and (min-width: map-get($map: $size, $key: $type)) {
+        @content;
+    }
+}
+
+// * hide-on-moblie
+@mixin breakpoint-up($type) {
+    @media only screen and (max-width: map-get($map: $size, $key: $type)) {
+        @content;
+    }
+}

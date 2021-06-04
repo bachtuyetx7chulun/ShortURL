@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 120rem;
+}
+
+.hide-on-moblie {
+    @include breakpoint-up(medium) {
+        display: none;
+    }
+}
+
+.hide-on-desktop {
+    @include breakpoint-down(medium) {
+        display: none;
+    }
+}
+
+.flex {
+    display: flex;
+
+    &-ai--ct {
+        align-items: center;
+    }
+
+    &-jc {
+        &--ct {
+            justify-content: center;
+        }
+
+        &--sb {
+            justify-content: space-between;
+        }
+    }
+}
+
+.color {
+    &--red {
+        color: $red;
+    }
+
+    &--blue {
+        color: $blue;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}

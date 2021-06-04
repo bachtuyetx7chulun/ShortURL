@@ -1,0 +1,43 @@
+.header {
+    width: 100%;
+    height: 5rem;
+
+    nav {
+        margin: 0rem 2rem;
+    }
+
+    &__logo {
+        img {
+            width: 100px;
+        }
+    }
+
+    &__hamburger > img {
+        width: 100px;
+    }
+
+    &__links {
+        > a {
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            padding: 0.5rem;
+            color: $blue;
+        }
+    }
+
+    &__actions {
+        > button {
+            outline: none;
+            border: 1px dashed $blue;
+            padding: 1rem;
+            background: none;
+            cursor: pointer;
+            transition: 0.5 ease-in-out;
+
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+}

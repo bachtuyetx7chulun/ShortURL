@@ -1,0 +1,79 @@
+.hero {
+    height: 5rem;
+    width: 100%;
+    background-color: $light;
+
+    &__contain {
+        padding-top: 1rem;
+        margin: 0.5rem 2rem;
+    }
+
+    &__content {
+        text-align: center;
+
+        > p {
+            color: #401a1a;
+        }
+        > span {
+            display: inline-block;
+            margin-top: 0.5rem;
+            color: red;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.mid {
+    width: 100%;
+    height: 160px;
+    // background-color: red;
+
+    &__contain {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        padding-top: 0.5rem;
+    }
+
+    &__form {
+        width: calc(100% - 2rem);
+        margin: 0 1rem;
+
+        > input {
+            line-height: 1.3;
+            height: 1.9rem;
+            width: 100%;
+            display: block;
+            border: 1px dashed $blue;
+            outline: none;
+            padding-left: 0.5rem;
+        }
+
+        button {
+            margin-top: 0.2rem;
+            background: $blue;
+            color: white;
+            outline: none;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            height: 40px;
+        }
+        img {
+            width: 40px;
+        }
+    }
+
+    &__receive {
+        width: calc(100% - 2rem);
+        margin: 0 1rem;
+        height: 80px;
+        // background-color: red;
+        padding-top: 1rem;
+
+        > p > span {
+            color: rgb(6, 174, 6);
+            text-decoration: none;
+        }
+    }
+}
